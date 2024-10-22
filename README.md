@@ -3,8 +3,7 @@ Linux-IPC-Pipes
 
 
 # Ex03-Linux IPC - Pipes
-# NAME : JERUSHLIN JOSE JB
-# ROLL NO : 212222240039
+
 # AIM:
 To write a C program that illustrate communication between two process using unnamed and named pipes
 
@@ -26,6 +25,7 @@ Testing the C Program for the desired output.
 
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
 ```
+#include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h> 
 #include<sys/stat.h> 
@@ -80,13 +80,18 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
+
 ```
+
+
+
+
+
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/cf55aa5e-e8d9-4254-b946-7c27ed0ac38b)
+![Screenshot from 2024-10-19 21-38-36](https://github.com/user-attachments/assets/ce518c92-fc2d-4ecd-9ae2-bf5886ec8415)
 
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
-
 ```
 #include <unistd.h>
 #include <stdlib.h>
@@ -99,9 +104,13 @@ if (res == 0) printf("FIFO created\n");
 exit(EXIT_SUCCESS);
 }
 ```
-## OUTPUT
-![image](https://github.com/user-attachments/assets/33c13ecc-4807-4567-879e-2abffbf0452f)
 
+
+
+
+## OUTPUT
+
+![Screenshot from 2024-10-19 21-40-24](https://github.com/user-attachments/assets/8147f0bd-eda5-4648-831b-35b23889b22f)
 
 # RESULT:
 The program is executed successfully.
